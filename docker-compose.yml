@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+  prometheus:
+      image: prom/prometheus
+      ports:
+        - 9090:9090
+      volumes:
+      - ./etc/prometheus:/workspace
+      command:
+        - --config.file=/workspace/prometheus.yml
+        - --enable-feature=exemplar-storage
+      depends_on:
+        - fastapi-server
+
+  fastapi-server:
+    build:
+      context: ./app
+    ports:
+      - 8000:8000
+    container_name: fastcontainer
