@@ -1,0 +1,17 @@
+{
+	"ulid": "01HYW2XB541704ZBDM00MN1DRW",
+	"minTime": 1716726023831,
+	"maxTime": 1716732000000,
+	"stats": {
+		"numSamples": 167,
+		"numSeries": 167,
+		"numChunks": 167
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HYW2XB541704ZBDM00MN1DRW"
+		]
+	},
+	"version": 1
+}

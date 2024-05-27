@@ -32,5 +32,5 @@ scrape_configs:
     scrape_interval: 5s
 
     static_configs:
-      - targets: ['fastapi-server:8000']
+      - targets: ['fastcontainer:8000']
 
